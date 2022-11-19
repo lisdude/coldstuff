@@ -48,7 +48,7 @@ When in doubt, try `HELP`! The help files contain references for common actions 
 # Gotchas
 - When using eval, don't forget that you still have to declare local variables. e.g. `;var x; for x in [1..5] .tell("" + x);`
 - **WARNING**: When you update the Genesis binary, your database will likely be inaccessible by the new version! It's important to 1.) Decompile your binary database into a textdump before updating. I also do it as part of the shutdown script and during regular backups. 2.) Just in case, back up your old Genesis binary.
-- You don't directly add methods. The simple act of invoking `@edit` is what adds a method.
+- You don't directly add methods. The simple act of invoking `@edit` or `@program` is what adds a method.
 - Unlike MOO, you can't just add a method and then start calling it from the command line immediately. You have to add it as a command first. See [Adding Commands](#Adding-Commands) below.
 
 # Adding Commands
